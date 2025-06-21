@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Doe - Software Engineer</title>
+    <meta name="description" content="Chathura Jayawardhane - Software Engineer Portfolio">
+    <meta name="keywords" content="software engineer, web development, angular, react">
+    <meta property="og:title" content="Chathura Jayawardhane - Software Engineer">
+    <meta property="og:description" content="Professional portfolio showcasing web and mobile development projects">
+    <title>Chathura Jayawardhane - Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-logo">
                 <a href="#home">CJ</a>
@@ -23,57 +27,66 @@
                     <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
                     <a href="#skills" class="nav-link">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a href="#projects" class="nav-link">Projects</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <li class="nav-item">
                     <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
-            <div class="hamburger">
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hi, I'm <span class="highlight">Chathura Jayawardhane</span>
-                </h1>
-                <h2 class="hero-subtitle">Software Engineer</h2>
+        <div class="hero-container-v3">
+            <div class="hero-content-v3">
+                <h1 class="hero-title">Chathura Jayawardhane</h1>
+                <h2 class="hero-subtitle">
+                    <span>Software Engineer</span>
+                </h2>
                 <p class="hero-description">
-                    I build exceptional digital experiences that combine elegant design with powerful functionality. 
-                    Passionate about creating innovative solutions that make a difference.
+                    I build exceptional digital experiences that combine elegant design with powerful functionality. Passionate about creating innovative solutions that make a difference.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i>
+                        View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                </div>
+                 <div class="hero-social-links">
+                    <a href="https://github.com/Damithjayawardhane" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/damithjayawardhane/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-image">
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="John Doe">
-                    </div>
-                    <div class="profile-info">
-                        <h3>John Doe</h3>
-                        <p>Full Stack Developer</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-github"></i></a>
-                            <a href="#"><i class="fab fa-linkedin"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
+            <div class="hero-visual-v3">
+                <div class="hero-image-wrapper">
+                    <img src="Chathura-img.png" alt="Chathura Jayawardhane">
                 </div>
             </div>
         </div>
+        <!-- Scroll Indicator -->
         <div class="scroll-indicator">
             <div class="scroll-arrow"></div>
         </div>
@@ -86,115 +99,127 @@
             <div class="about-content">
                 <div class="about-text">
                     <p>
-                        I'm a passionate Software Engineer with 5+ years of experience building scalable web applications 
-                        and digital solutions. I specialize in modern web technologies and love turning complex problems 
-                        into simple, beautiful solutions.
+                        I'm a passionate and results-oriented Software Engineer with over 5 years of experience in designing, developing, and deploying scalable web and mobile applications. My journey in tech is driven by a motto to "do things perfectly & learn things correctly", which reflects in my dedication to clean code and user-centric solutions.
                     </p>
                     <p>
-                        My journey in software development started with curiosity and has evolved into a deep passion 
-                        for creating user-centric applications. I believe in writing clean, maintainable code and 
-                        staying up-to-date with the latest industry trends and best practices.
+                        I hold a B.Sc. (Hons) in Information Technology from the Sri Lanka Institute of Information Technology (SLIIT) and have a strong background in both front-end and back-end development, with experience across the full software development lifecycle.
                     </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>5+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat">
-                            <h3>50+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat">
-                            <h3>20+</h3>
-                            <p>Happy Clients</p>
-                        </div>
-                    </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&h=600&fit=crop" alt="About Me">
+                    <img src="Chathura-middle.jpg" alt="About Me">
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>SOFTWARE ENGINEER</h3>
+                        <p class="timeline-company">SchoolGrid Ltd (UK)</p>
+                        <p class="timeline-date">Jan 2023 - Present</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>ASSOCIATE SOFTWARE ENGINEER</h3>
+                        <p class="timeline-company">Cooperative Insurance Company Limited</p>
+                        <p class="timeline-date">Sep 2019 - Dec 2022</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>SOFTWARE PROGRAMMER</h3>
+                        <p class="timeline-company">Cooperative Insurance Company Limited</p>
+                        <p class="timeline-date">Feb 2019 - Sep 2019</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>INTERN SOFTWARE ENGINEER</h3>
+                        <p class="timeline-company">Cooperative Insurance Company Limited</p>
+                        <p class="timeline-date">Aug 2018 - Feb 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-vuejs"></i>
-                            <span>Vue.js</span>
-                        </div>
+            <div class="skills-redesigned-container">
+                <div class="skill-card">
+                    <h3>Web Technologies</h3>
+                    <div class="skill-tags">
+                        <span><i class="fab fa-html5"></i> HTML</span>
+                        <span><i class="fab fa-css3-alt"></i> CSS</span>
+                        <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                        <span><i class="fab fa-angular"></i> Angular 2+</span>
+                        <span><i class="fab fa-react"></i> ReactJS</span>
+                        <span><i class="fab fa-react"></i> React with Typescript</span>
+                        <span><i class="fas fa-gem"></i> PrimeNG</span>
+                        <span><i class="fas fa-file-code"></i> C#</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-java"></i>
-                            <span>Java</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-server"></i>
-                            <span>PostgreSQL</span>
-                        </div>
+                <div class="skill-card">
+                    <h3>Other Technologies</h3>
+                    <div class="skill-tags">
+                        <span><i class="fab fa-java"></i> Java</span>
+                        <span><i class="fab fa-react"></i> React Native</span>
+                        <span><i class="fas fa-cogs"></i> .Net Core</span>
+                        <span><i class="fas fa-robot"></i> Tesseract OCR Engine</span>
+                        <span><i class="fas fa-calculator"></i> Math Lab</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Tools & Others</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-figma"></i>
-                            <span>Figma</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>React Native</span>
-                        </div>
+                <div class="skill-card">
+                    <h3>Development Environment</h3>
+                    <div class="skill-tags">
+                        <span><i class="fas fa-laptop-code"></i> Microsoft Visual Studio</span>
+                        <span><i class="fas fa-code"></i> Visual Studio Code</span>
+                        <span><i class="fas fa-laptop-code"></i> IntelliJ IDEA</span>
+                        <span><i class="fas fa-laptop-code"></i> Eclipse</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Database</h3>
+                    <div class="skill-tags">
+                        <span><i class="fas fa-database"></i> MySQL</span>
+                        <span><i class="fas fa-database"></i> Oracle</span>
+                        <span><i class="fas fa-database"></i> SQL Server</span>
+                        <span><i class="fas fa-database"></i> PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Version Control System</h3>
+                    <div class="skill-tags">
+                        <span><i class="fab fa-git-alt"></i> GIT</span>
+                        <span><i class="fab fa-bitbucket"></i> Gitbucket</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Project Management Tool</h3>
+                    <div class="skill-tags">
+                        <span><i class="fab fa-jira"></i> JIRA</span>
+                    </div>
+                </div>
+                 <div class="skill-card">
+                    <h3>Test Framework</h3>
+                    <div class="skill-tags">
+                        <span><i class="fas fa-vial"></i> Jasmine</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Graphic Designing</h3>
+                    <div class="skill-tags">
+                        <span><i class="fas fa-palette"></i> Photoshop</span>
+                        <span><i class="fas fa-video"></i> Corel video studio</span>
                     </div>
                 </div>
             </div>
@@ -204,64 +229,243 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
+            <h2 class="section-title">Employment History & Projects</h2>
+            <div class="projects-grid-redesigned">
+                 <div class="project-card-redesigned">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="E-Commerce Platform">
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop" alt="Online Tender Web Site">
                     </div>
                     <div class="project-content">
-                        <h3>E-Commerce Platform</h3>
-                        <p>A full-stack e-commerce solution with React frontend, Node.js backend, and MongoDB database. Features include user authentication, payment processing, and admin dashboard.</p>
+                        <h3>Online Tender Web Site</h3>
+                        <h4>Cooperative Insurance Company Limited</h4>
+                        <ul>
+                            <li>Requirement gathering and analyzing</li>
+                            <li>Software documentation</li>
+                            <li>UI designing & Front-end development</li>
+                            <li>Testing and Deployment</li>
+                            <li>Maintenance</li>
+                        </ul>
                         <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                            <span>Stripe</span>
+                            <span>Angular</span>
+                            <span>MySQL</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="btn btn-small">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-outline">GitHub</a>
+                            <a href="http://tender.ci.lk/" target="_blank" class="btn btn-small">Live Demo</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card-redesigned">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Task Management App">
+                        <img src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9e?w=400&h=250&fit=crop" alt="Motor Quotation System">
                     </div>
                     <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
-                        <div class="project-tech">
-                            <span>Vue.js</span>
-                            <span>Python</span>
+                        <h3>Online Motor Quotation Web System</h3>
+                        <h4>Cooperative Insurance Company Limited</h4>
+                         <ul>
+                            <li>UI designing & Front-end development</li>
+                            <li>Software testing</li>
+                            <li>Issue handling and Logging during of System Live Run Period</li>
+                            <li>Maintenance</li>
+                        </ul>
+                         <div class="project-tech">
+                            <span>Angular 8</span>
+                            <span>Oracle</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card-redesigned">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1516035069371-29a1b254344e?w=400&h=250&fit=crop" alt="Motor Policy System">
+                    </div>
+                    <div class="project-content">
+                        <h3>Online Motor Policy Web System</h3>
+                        <h4>Cooperative Insurance Company Limited</h4>
+                        <ul>
+                            <li>Requirement gathering and analyzing</li>
+                            <li>UI designing & Front-end development</li>
+                            <li>Software testing</li>
+                        </ul>
+                         <div class="project-tech">
+                            <span>Angular</span>
                             <span>PostgreSQL</span>
-                            <span>Socket.io</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-small">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-outline">GitHub</a>
                         </div>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card-redesigned">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=250&fit=crop" alt="Mobile Fitness App">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c117a92afb1?w=400&h=250&fit=crop" alt="Course Management System">
                     </div>
                     <div class="project-content">
-                        <h3>Fitness Tracking App</h3>
-                        <p>A cross-platform mobile application for fitness tracking with workout plans, progress monitoring, and social features.</p>
+                        <h3>Online Course Management System</h3>
+                        <h4>Cooperative Insurance Company Limited</h4>
+                        <ul>
+                            <li>Front-end development</li>
+                            <li>Back-end development</li>
+                            <li>Software testing</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card-redesigned">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1616429326442-99931bfa434d?w=400&h=250&fit=crop" alt="Insurance System">
+                    </div>
+                    <div class="project-content">
+                        <h3>Intermediate Motor Quotation & Policy Insurance System</h3>
+                        <h4>Bank of Ceylon - Sri Lanka</h4>
+                        <ul>
+                            <li>Requirement gathering and analyzing</li>
+                            <li>Software documentation & UI designing</li>
+                            <li>Back-end Development & REST API Handling</li>
+                            <li>Front-end development</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Java</span>
+                            <span>Vaadin</span>
+                            <span>Spring Boot</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card-redesigned">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611118744523-11b09805f57c?w=400&h=250&fit=crop" alt="Overtime-Calculator">
+                    </div>
+                    <div class="project-content">
+                        <h3>Overtime-Calculator</h3>
+                        <h4>Personal Project</h4>
+                        <p>An overtime-calculator built with Angular that allows users to record their details, overtime, and calculate totals.</p>
+                        <div class="project-tech">
+                            <span>Angular</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://damithjayawardhane.github.io/Time-Calculator/" target="_blank" class="btn btn-small">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="project-card-redesigned">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1583344654955-73c3352329a4?w=400&h=250&fit=crop" alt="Sinhala OCR System">
+                    </div>
+                    <div class="project-content">
+                        <h3>Sinhala OCR System</h3>
+                        <h4>SLIIT - Research 2019</h4>
+                        <p>A group project providing OCR features for the Sinhala language to identify printed and handwritten documents using a trained Tesseract-OCR-Engine.</p>
+                        <div class="project-tech">
+                            <span>Tesseract-OCR</span>
+                            <span>Android</span>
+                        </div>
+                    </div>
+                </div>
+                 <div class="project-card-redesigned">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1601972602538-3b116644353c?w=400&h=250&fit=crop" alt="Home Master Mobile App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Home Master Mobile Application</h3>
+                         <h4>SLIIT - 2018</h4>
+                        <p>A cross-platform mobile application designed and developed from the ground up using React Native, NodeJS, and MongoDB.</p>
                         <div class="project-tech">
                             <span>React Native</span>
-                            <span>Firebase</span>
-                            <span>Redux</span>
-                            <span>Expo</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-small">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-outline">GitHub</a>
+                            <span>NodeJS</span>
+                            <span>MongoDB</span>
                         </div>
                     </div>
+                </div>
+                 <div class="project-card-redesigned">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1585435557343-3b092031a831?w=400&h=250&fit=crop" alt="Online Pharmacy Web App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Online Pharmacy Web Application</h3>
+                         <h4>SLIIT - 2018</h4>
+                        <p>A web application for an online pharmacy, designed and developed using ReactJS for the front-end and a NodeJS/Express/MongoDB backend.</p>
+                        <div class="project-tech">
+                            <span>ReactJS</span>
+                            <span>NodeJS</span>
+                            <span>ExpressJS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card-redesigned">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1560411038-70f209618f0f?w=400&h=250&fit=crop" alt="Online Web App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Online Web Application</h3>
+                        <h4>Group Project | SLIIT - 2017</h4>
+                        <p>A group project for the management of Badulla Electro Master (PVT)LTD. Contributed in profile and notification management features.</p>
+                        <div class="project-tech">
+                           <span>C#</span>
+                           <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Qualifications</h2>
+            <div class="education-content">
+                <div class="education-column">
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>SRI LANKA INSTITUTE OF INFORMATION TECHNOLOGY (SLIIT)</h3>
+                                <p>BSc (Hons) in Information Technology</p>
+                                <p>2016-2020</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>SARANATH VIDYALAYA, KULIYAPITIYA</h3>
+                                <p>GCE Advanced Level</p>
+                                <p>2014</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <h3>SARANATH VIDYALAYA, KULIYAPITIYA</h3>
+                                <p>GCE Ordinary Level</p>
+                                <p>2009</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-column">
+                    <h3>Professional Qualifications</h3>
+                    <ul class="qualifications-list">
+                        <li>
+                            <h4>CERTIFICATE IN HUMAN RESOURCES MANAGEMENT</h4>
+                            <p>Future World IPS Institution - Nugegoda</p>
+                        </li>
+                        <li>
+                            <h4>CERTIFICATE IN INTERNET MARKETING</h4>
+                            <p>Future World IPS Institution - Nugegoda</p>
+                        </li>
+                        <li>
+                            <h4>CERTIFICATE IN PROFESSIONAL WEB DESIGNER</h4>
+                            <p>Ceylon WordPress Academy</p>
+                        </li>
+                        <li>
+                            <h4>CERTIFICATE IN HARDWARE & NETWORKING</h4>
+                            <p>Future World IPS Institution - Nugegoda</p>
+                        </li>
+                        <li>
+                            <h4>CERTIFICATE IN MICROSOFT OFFICE PROGRAM</h4>
+                            <p>Future World IPS Institution - Nugegoda</p>
+                        </li>
+                        <li>
+                            <h4>CERTIFICATE IN GRAPHIC DESIGNING</h4>
+                            <p>Future World IPS Institution - Nugegoda</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -278,39 +482,49 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>john.doe@email.com</span>
+                            <span>damithjayawardhane@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+1 (555) 123-4567</span>
+                            <span>+94 712621966</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>San Francisco, CA</span>
+                            <span>Moragane, Sri Lanka</span>
                         </div>
                     </div>
                     <div class="social-links-large">
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://github.com/Damithjayawardhane" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/damithjayawardhane/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/94712621966" target="_blank" class="social-link whatsapp-link"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <div class="contact-form-container">
+                    <div class="contact-method-selector">
+                        <button type="button" class="contact-method-btn active" data-method="email">
+                            <i class="fas fa-envelope"></i>
+                            Send Email
+                        </button>
                     </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
+                    <form class="contact-form" id="contactForm" onsubmit="return false;">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitBtn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Email
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -319,12 +533,18 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 John Doe. All rights reserved.</p>
+                <p>&copy; 2025 Chathura Jayawardhane. All rights reserved.</p>
                 <p>Built with ❤️ and lots of ☕</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function(){
+        emailjs.init('YOUR_ACTUAL_PUBLIC_KEY'); // Replace with your real Public Key
+      })();
+    </script>
 </body>
 </html> 
